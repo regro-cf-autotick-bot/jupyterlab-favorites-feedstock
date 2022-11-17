@@ -1,13 +1,13 @@
 {% set name = "jupyterlab-favorites" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/NERSC/{{ name|lower }}/archive/v{{ version }}.tar.gz
-  sha256: 6834e0502daf2cc883fb40dac4e85675e0854c9f89f139e508675165985bf2b8
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 67be069a4fb120eedf0240b8503567e044fc6d9ee45ddf42098e1b605c1872e7
 
 build:
   noarch: python
@@ -16,18 +16,15 @@ build:
 
 requirements:
   host:
-    - nodejs >=12.0.0
-    - python >=3.6
+    - python >=3.7
     - pip
-    - jupyterlab >=3.0.0
     - jupyter-packaging >=0.7.9,<0.8.0
   run:
-    - python >=3.6
-    - jupyterlab >=3.0.0
+    - python >=3.7
 
 test:
   requires:
-    - nodejs >=12.0.0
+    - jupyterlab >=3.0.0,<4.0.0
   commands:
     - jupyter labextension list 2>&1 | grep -ie "jupyterlab-favorites.*OK"
     - python -m jupyterlab.browser_check  # [not linux]
