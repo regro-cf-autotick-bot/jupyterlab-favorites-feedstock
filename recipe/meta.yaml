@@ -27,11 +27,11 @@ test:
   requires:
     - jupyterlab >=3.0.0,<4.0.0
   commands:
-    - jupyter labextension list 2>&1 | grep -ie "jupyterlab-favorites.*OK"
+    - jupyter labextension list 2>&1 | grep -ie "@jlab-enhanced/favorites.*OK"
     - python -m jupyterlab.browser_check  # [not linux]
 
 about:
-  home: https://github.com/NERSC/jupyterlab-favorites
+  home: https://github.com/jupyterlab-contrib/jupyterlab-favorites
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE

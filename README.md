@@ -1,7 +1,7 @@
 About jupyterlab-favorites
 ==========================
 
-Home: https://github.com/NERSC/jupyterlab-favorites
+Home: https://github.com/jupyterlab-contrib/jupyterlab-favorites
 
 Package license: BSD-3-Clause
 
