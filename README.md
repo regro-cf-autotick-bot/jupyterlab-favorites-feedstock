@@ -1,11 +1,11 @@
-About jupyterlab-favorites
-==========================
+About jupyterlab-favorites-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-favorites-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jupyterlab-contrib/jupyterlab-favorites
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-favorites-feedstock/blob/main/LICENSE.txt)
 
 Summary: Add the ability to save favorite folders to JupyterLab for quicker browsing.
 
