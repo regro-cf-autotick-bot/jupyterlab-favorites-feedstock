@@ -1,5 +1,5 @@
 {% set name = "jupyterlab-favorites" %}
-{% set version = "3.2.1" %}
+{% set version = "3.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: eb2432b82c1bd43b6dc4a7c55d89c79ec801bf1184a6a63e512bfd968a0cfca2
+  sha256: 5788898b859cc79e0717eeb801a156a0038ee5ce7b8bca8eeb2c19bd8b554f04
 
 build:
   noarch: python
